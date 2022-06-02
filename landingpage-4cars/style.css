@@ -11,8 +11,30 @@
 
 }
 /* Header */
-header{
-    background-color: aqua;
+.barra-icone{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0 20%;
+}
+.barra-icone a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+    text-align: center; 
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.barra-icone a:hover {
+    font-size: x-large;
+    color: #ff5c5c;
+    border-bottom:1px solid #ff5c5c;
+}  
+.barra-icone img{
+    width: 16vh;
 }
 article img{
     width: 20px;
