@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -40,8 +40,43 @@
 article img{
     width: 20px;
 }
+
+/* Banner */
+
+.banner {
+    width: 100vw;
+    height: 600px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.banner img {
+    padding: 0;
+    width: 100vw;
+    height: 600px;
+    opacity: 0.8;
+}
+
+.msg-banner {
+    background-color: white;
+    width: 900px;
+    height: 150px;
+    opacity: 0.8;
+    border-radius: 20px;
+    box-shadow: 10px 5px 13px black;
+    margin-top: -108px;
+    padding: 10px;
+}
+
+.msg-banner h1 {
+    font-size: 43px;
+    line-height: 69px;
+}
+
+
 /* Main */
 /* Quem somos */
+
 /* produtos-servicos */
 #produtos-servicos {
     margin-top: 2em;
