@@ -3,8 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Header */
+/* Container */
+.container{
+    display: grid;
+    grid-template-rows:10vh 80vh 10vh;
+    grid-template-columns: 1fr;
 
+}
+/* Header */
+header{
+    background-color: aqua;
+}
+article img{
+    width: 20px;
+}
+/* Main */
+/* Quem somos */
+/* produtos-serviços */
 /* Contato */
 #contato {
     height: 750px;
@@ -34,7 +49,7 @@
     height: 100px;
     box-sizing: border-box;
 }
-
+/* Onde estamos */
 /* Footer */
 #redesSociais {
     display: block;
