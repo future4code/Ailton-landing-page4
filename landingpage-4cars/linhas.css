@@ -1,0 +1,101 @@
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo h2{
+    margin: 0;
+    color: black;
+    font-size: 1.8rem;
+}
+.planos{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+.planosbox{
+    padding: 40px 40px;
+    background-color: white;
+    color: black;
+    border-right: 1px dashed black;
+    border-left: 1px dashed black;
+    max-width: 400px;
+    margin: 10px;
+}
+.planosbox h1 {
+    padding: 0px 0px;
+    text-align: center;
+    margin: 0;
+}
+
+.planos h2 {
+    margin: 1px;
+    text-align: center;
+}
+
+.planosbox img {
+    height: 120px;
+    text-align: center;
+}
+.imagem {
+    text-align: center;
+}
+.planosbox:hover {
+    transform: translateY(-10px);
+    background: var(--main-color);
+    transition: 0.5s;
+    --main-color: black;
+    color: white; 
+}
+
+.titulo h2 {
+    color: black;
+    text-align: center;
+    margin-top: 6em;
+
+}
+input[type="search"]{
+    height: 25px;
+    width: 500px;
+    }
+    input[type="text"]{
+        height: 25px;
+        width: 500px;
+        }
+select{
+        height: 25px;
+        width: 500px;
+        }
+
+table {
+    color:black;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+table .tabela {
+    width: 100px;
+}
+
+.tabela th {
+    color: black;
+    padding: 5px;
+    text-align: left;
+}
+
+.tabela td {
+    color: black;
+    padding: 5px;
+
+}
+button {
+    width: 100px;
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+

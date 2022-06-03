@@ -8,16 +8,16 @@
     display: grid;
     grid-template-rows:10vh 1fr 10vh;
     grid-template-columns: 1fr;
-
 }
 /* Header */
 .barra-icone{
     background-color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     align-items: center;
-    padding: 0 20%;
+    position: sticky;
+    top: 0;
 }
 .barra-icone a {
     text-decoration: none;
@@ -36,9 +36,10 @@
 }  
 .barra-icone img{
     width: 16vh;
+    padding: 0;
 }
 article img{
-    width: 20px;
+    width: 30px;
 }
 
 /* Banner Page*/
@@ -54,18 +55,18 @@ article img{
     padding: 0;
     width: 100vw;
     height: 600px;
-    opacity: 0.8;
 }
 
 .msg-banner {
     background-color: white;
     width: 900px;
     height: 150px;
-    opacity: 0.8;
     border-radius: 20px;
     box-shadow: 10px 5px 13px black;
     margin-top: -108px;
     padding: 10px;
+    opacity: 0.8;
+    
 }
 
 .msg-banner h1 {
