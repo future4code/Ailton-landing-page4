@@ -6,7 +6,7 @@
 /* Container */
 .container{
     display: grid;
-    grid-template-rows:10vh 80vh 10vh;
+    grid-template-rows:10vh 1fr 10vh;
     grid-template-columns: 1fr;
 
 }
@@ -144,10 +144,10 @@ ul {
 }
 /* Contato */
 #contato {
-    height: 750px;
+    height: 450px;
     background-color: white;
     text-align: center;
-    color: pink;
+    color: #ff5c5c;
 }
 #contato h2 {
     padding: 50px;
@@ -172,16 +172,35 @@ ul {
     box-sizing: border-box;
 }
 /* Onde estamos */
+#onde-estamos{
+    background: color white;; 
+    text-align: center; 
+}
+#onde-estamos img{
+    height: 500px;
+}
 /* Footer */
 #redesSociais {
-    display: block;
     width: 100%;
-    height: 250px;
+    height: 17vh;
     background-color: white;
     text-align: center;
     margin: 0 auto;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 #redesSociais h2 {
-    color: white;
+    color: black;
+    padding: 0;
+}
+#redesSociais img{
+    width: 40px;
+    padding: 5px;
+}
+#redesSociais img:hover{
+    width: 45px;
+}
+.icon{
+    flex-direction: row;
 }
