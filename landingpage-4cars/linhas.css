@@ -1,13 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Container */
+.container{
+    max-width: 1280px;
+    display: grid;
+    grid-template-rows:10vh 1fr 10vh;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+}
+/* Header */
+.barra-icone{
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding-left: 30px;
+    border-bottom: 1px solid lightgray;
+    z-index: 1;
+}
+.barra-icone a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+    text-align: center; 
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.barra-icone a:hover {
+    font-size: x-large;
+    color: #ff5c5c;
+    border-bottom:1px solid #ff5c5c;
+} 
+
+.barra-icone img{
+    width: 16vh;
+    padding: 0;
+}
+
+/****/
+
 .titulo{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.titulo h2{
-    margin: 0;
+.titulo h2 {
+    margin: 3rem 0;
     color: black;
     font-size: 1.8rem;
 }
+
+.titulo p {
+    font-size: 1.8rem;
+}
+
 .planos{
     display: flex;
     justify-content: center;
@@ -35,6 +90,11 @@
     text-align: center;
 }
 
+.planos span {
+    line-height: 35px;
+}
+
+
 .planosbox img {
     height: 120px;
     text-align: center;
@@ -50,12 +110,6 @@
     color: white; 
 }
 
-.titulo h2 {
-    color: black;
-    text-align: center;
-    margin-top: 6em;
-
-}
 input[type="search"]{
     height: 25px;
     width: 500px;
@@ -76,7 +130,7 @@ table {
 }
 
 table .tabela {
-    width: 100px;
+    width: 100px; 
 }
 
 .tabela th {
@@ -88,14 +142,46 @@ table .tabela {
 .tabela td {
     color: black;
     padding: 5px;
+    text-align: left;
 
 }
 button {
     width: 100px;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 div {
     text-align: center;
 }
+
+
+/* Footer */
+#redesSociais {
+    width: 100%;
+    height: 12vh;
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 1px solid lightgrey;
+}
+#redesSociais h2 {
+    color: black;
+    padding: 0;
+}
+#redesSociais img{
+    width: 40px;
+    padding: 5px;
+}
+#redesSociais img:hover{
+    width: 45px;
+}
+.icon{
+    flex-direction: row;
+    padding-top: 6px;
+}
+
 

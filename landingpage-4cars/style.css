@@ -5,6 +5,7 @@
 }
 /* Container */
 .container{
+    max-width: 1280px;
     display: grid;
     grid-template-rows:10vh 1fr 10vh;
     grid-template-columns: 1fr;
@@ -18,6 +19,8 @@
     align-items: center;
     position: sticky;
     top: 0;
+    border-bottom: 1px solid lightgray;
+    z-index: 1;
 }
 .barra-icone a {
     text-decoration: none;
@@ -38,9 +41,6 @@
     width: 16vh;
     padding: 0;
 }
-article img{
-    width: 30px;
-}
 
 /* Banner Page*/
 
@@ -49,6 +49,8 @@ article img{
     height: 600px;
     text-align: center;
     margin-bottom: 100px;
+    opacity: 0.8;
+    z-index: 0;
 }
 
 .banner img {
@@ -62,28 +64,44 @@ article img{
     width: 900px;
     height: 150px;
     border-radius: 20px;
+    margin: 0 auto;
     box-shadow: 10px 5px 13px black;
-    margin-top: -108px;
+    margin-top: -80px;
     padding: 10px;
     opacity: 0.8;
-    
+    z-index: 0;
 }
 
 .msg-banner h1 {
-    font-size: 43px;
+    font-size: 2rem;
+    line-height: 50px;
+}
+
+.msg-banner h2 {
+    font-size: 1.8rem;
     line-height: 69px;
 }
 
 
 /* Main */
-/* Quem somos */
+
+/* Sobre a 4cars */
+.sobre-4cars {
+    height: 70vh;
+    display: flex;
+    align-items: flex-end;
+}
+#sobre-4cars img {
+    width: 100vw;
+    height: 55vh;
+    margin: 10px 0;
+    padding: 0;
+}
 
 /* produtos-servicos */
 #produtos-servicos {
-    margin-top: 2em;
-    padding: 2em 0;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -145,51 +163,65 @@ ul {
 }
 /* Contato */
 #contato {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+#contato > article {
     height: 450px;
     background-color: white;
     text-align: center;
-    color: #ff5c5c;
+    color: black;
 }
-#contato h2 {
+#contato > article >  h2 {
     padding: 50px;
     font-size: 35px;
 }
-#contato form {
+#contato > article > form {
     width: 400px;
     margin: 0 auto;
 }
-#contato form input {
+#contato  > article > form input {
     display: block;
     margin: 15px;
     width: 100%;
     height: 40px;
+    padding: 6px;
     box-sizing: border-box;
 }
 #contato form textarea {
     display: block;
     margin: 15px;
-    width: 100%;
-    height: 100px;
+    padding: 8px 6px;
     box-sizing: border-box;
 }
+
+#contato form input[type=submit]:hover {
+    background: linear-gradient(90deg,#f3bcaf, #f4b3aa, #f5aaa6, #f5a1a3, #f498a2, #f38fa2);
+    border: 0;
+}
+
 /* Onde estamos */
 #onde-estamos{
-    background: color white;; 
     text-align: center; 
 }
 #onde-estamos img{
-    height: 500px;
+    height: 450px;
 }
+
+
 /* Footer */
 #redesSociais {
     width: 100%;
-    height: 17vh;
+    height: 12vh;
     background-color: white;
     text-align: center;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    border-top: 1px solid lightgrey;
 }
 #redesSociais h2 {
     color: black;
@@ -204,4 +236,5 @@ ul {
 }
 .icon{
     flex-direction: row;
+    padding-top: 6px;
 }
