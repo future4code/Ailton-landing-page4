@@ -5,7 +5,7 @@
 }
 /* Container */
 .container{
-    max-width: 1280px;
+    max-width: 100%;
     display: grid;
     grid-template-rows:10vh 1fr 10vh;
     grid-template-columns: 1fr;
@@ -76,7 +76,7 @@
     color: black;
     border-right: 1px dashed black;
     border-left: 1px dashed black;
-    max-width: 400px;
+    max-width: 100%;
     margin: 10px;
 }
 .planosbox h1 {
@@ -112,15 +112,15 @@
 
 input[type="search"]{
     height: 25px;
-    width: 500px;
+    width: 100%;
     }
     input[type="text"]{
         height: 25px;
-        width: 500px;
+        width: 100%;
         }
 select{
         height: 25px;
-        width: 500px;
+        width: 100%;
         }
 
 table {
@@ -130,7 +130,7 @@ table {
 }
 
 table .tabela {
-    width: 100px; 
+    width: 100%; 
 }
 
 .tabela th {
@@ -183,5 +183,4 @@ div {
     flex-direction: row;
     padding-top: 6px;
 }
-
 
