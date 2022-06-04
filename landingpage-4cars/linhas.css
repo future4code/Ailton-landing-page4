@@ -32,22 +32,16 @@
     font-size: x-large;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
-
 }
-
 .barra-icone a:hover {
     font-size: x-large;
     color: #ff5c5c;
     border-bottom:1px solid #ff5c5c;
 } 
-
 .barra-icone img{
     width: 16vh;
     padding: 0;
 }
-
-/****/
-
 .titulo{
     display: flex;
     flex-direction: column;
@@ -58,11 +52,9 @@
     color: black;
     font-size: 1.8rem;
 }
-
 .titulo p {
     font-size: 1.8rem;
 }
-
 .planos{
     display: flex;
     justify-content: center;
@@ -84,17 +76,13 @@
     text-align: center;
     margin: 0;
 }
-
 .planos h2 {
     margin: 1px;
     text-align: center;
 }
-
 .planos span {
     line-height: 35px;
 }
-
-
 .planosbox img {
     height: 120px;
     text-align: center;
@@ -109,53 +97,44 @@
     --main-color: black;
     color: white; 
 }
-
 input[type="search"]{
     height: 25px;
     width: 100%;
-    }
-    input[type="text"]{
+}
+input[type="text"]{
         height: 25px;
         width: 100%;
-        }
+}
 select{
         height: 25px;
         width: 100%;
-        }
-
+}
 table {
     color:black;
     margin-right: auto;
     margin-left: auto;
 }
-
 table .tabela {
     width: 100%; 
 }
-
 .tabela th {
     color: black;
     padding: 5px;
     text-align: left;
 }
-
 .tabela td {
     color: black;
     padding: 5px;
     text-align: left;
-
 }
 button {
     width: 100px;
     text-align: center;
     margin-bottom: 50px;
 }
-
 div {
     text-align: center;
 }
-
-
 /* Footer */
 #redesSociais {
     width: 100%;
@@ -183,4 +162,3 @@ div {
     flex-direction: row;
     padding-top: 6px;
 }
-
