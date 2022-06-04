@@ -114,8 +114,10 @@ table {
     margin-right: auto;
     margin-left: auto;
 }
-table .tabela {
-    width: 100%; 
+.tabela {
+    width: 60%;
+    margin: 0 auto;
+     
 }
 .tabela th {
     color: black;
@@ -132,6 +134,10 @@ button {
     text-align: center;
     margin-bottom: 50px;
 }
+button:hover {
+    border:0;
+    background: linear-gradient(90deg,#f3bcaf, #f4b3aa, #f5aaa6, #f5a1a3, #f498a2, #f38fa2);
+}
 div {
     text-align: center;
 }
@@ -146,6 +152,10 @@ div {
     justify-content: center;
     flex-direction: column;
     border-top: 1px solid lightgrey;
+}
+#redesSociais a {
+    text-decoration: none;
+    cursor: pointer;
 }
 #redesSociais h2 {
     color: black;
