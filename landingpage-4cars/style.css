@@ -9,7 +9,6 @@
     display: grid;
     grid-template-rows:10vh 1fr 10vh;
     grid-template-columns: 1fr;
-    
 }
 /* Header */
 .barra-icone{
@@ -31,7 +30,6 @@
     font-size: x-large;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
-
 }
 .barra-icone a:hover {
     font-size: x-large;
@@ -42,27 +40,21 @@
     width: 16vh;
     padding: 0;
 }
-
 /* Banner Page*/
-
 .banner {
     width: 100%;
-    height: 600px;
     text-align: center;
     margin-bottom: 100px;
     opacity: 0.8;
     z-index: 0;
 }
-
 .banner img {
     padding: 0;
     width: 100%;
-    height: 600px;
 }
-
 .msg-banner {
     background-color: white;
-    width: 900px;
+    width: 100%;
     height: 150px;
     border-radius: 20px;
     margin: 0 auto;
@@ -72,20 +64,15 @@
     opacity: 0.8;
     z-index: 0;
 }
-
 .msg-banner h1 {
     font-size: 2rem;
     line-height: 50px;
 }
-
 .msg-banner h2 {
     font-size: 1.8rem;
     line-height: 69px;
 }
-
-
 /* Main */
-
 /* Sobre a 4cars */
 .sobre-4cars {
     height: 70vh;
@@ -98,7 +85,6 @@
     margin: 10px 0;
     padding: 0;
 }
-
 /* produtos-servicos */
 #produtos-servicos #mensagem-mobile{
     display: none;
@@ -109,13 +95,15 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 50px;
 }
 #produtos-servicos h2 {
     color: #ff5c5c;
     font-size: xx-large;
     font-weight: bold;
 }
-
 #produtos-servicos>div {
     min-height: 300px;
     display: flex;
@@ -123,11 +111,9 @@
     align-items: center;
     width: 500px;
 }
-
 #produtos-servicos>div> div, img , ul {
     padding: 1em;
 }
-
 .carro {
     max-width: 400px;
     max-height: 200px;
@@ -136,13 +122,11 @@
     max-width: 400px;
     max-height: 190px;
 }
-
 ul {
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;   
     font-size: larger;
 }
-
 .linhapopular {
     padding-left: 1em;
 }
@@ -165,7 +149,6 @@ ul {
     justify-content: space-evenly;
     margin-bottom: 40px;
 }
-
 #contato > article {
     height: 450px;
     background-color: white;
@@ -196,12 +179,10 @@ ul {
     width: 100%;
     height: 100px;
 }
-
 #contato form input[type=submit]:hover {
     background: linear-gradient(90deg,#f3bcaf, #f4b3aa, #f5aaa6, #f5a1a3, #f498a2, #f38fa2);
     border: 0;
 }
-
 /* Onde estamos */
 #onde-estamos{
     text-align: center; 
@@ -209,8 +190,6 @@ ul {
 #onde-estamos img{
     height: 450px;
 }
-
-
 /* Footer */
 #redesSociais {
     width: 100%;
@@ -238,9 +217,9 @@ ul {
     flex-direction: row;
     padding-top: 6px;
 }
-
-/* Responsividade */
+/* Responsividade*/
  @media screen and (min-width: 320px) and (max-width : 480px) {
+     /* Header */
     .barra-icone{
         background-color: white;
         position: sticky;
@@ -254,42 +233,61 @@ ul {
     .barra-icone img{
         width: 17vw;
     }
+    /* Main - Banner */
     .banner{
-        display: none;
+        margin-bottom: 30px;
     }
-    #produtos-servicos>div{
-        min-height: 128px;
-        width: 100%;
+    .msg-banner{
+        height: 70px;
+        width: 90%;
+        margin-top:-35px;
     }
-    #produtos-servicos #mensagem-mobile{
-        display: flex;
-        width: 100%;
+    .msg-banner h1 {
+        font-size: 1rem;
+        line-height: 31px;
     }
-    #mensagem-mobile h2,#mensagem-mobile h1{
-        font-size: 25px;
+    .msg-banner h2 {
+        font-size: 1rem;
+        line-height: 12px;
     }
+    /* Main - produtos e serviços */
     #produtos-servicos{
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%; 
-        height: 900px;
+        height: 684px;
+        flex-wrap: nowrap;
     }
-    /* #produtos-servicos .linhapopular {
-        height: 785px;
-    } */
-    .linhapopular .carro, .linhaLuxo .carroluxo{
+    #produtos-servicos>div{
+        min-height: 128px;
+        width: 100%;
+    }
+    .linhapopular {
+        padding-left: 0;
+    }
+    .linhapopular .carro{
+        width: 218px;
+        height: 153px;
+    }
+    #linha-maior{
+        width: 250px;
+    }
+    .linhaLuxo {
+        padding-left: 0;
+    }
+    .linhaLuxo .carroluxo{
         width: 200px;
         height: 150px;
     }
+    .linhapopular:hover, .linhaLuxo:hover {
+        border: 0;
+    } 
+    /* Main - Sobre 4Cars */
     .info-4cars img{
         display: none;
     }
-    .linhapopular:hover, .linhaLuxo:hover {
-        /* width: 350px; */
-        border: 0;
-    }
-    
+    /* Main - Contato  */
     #contato{
         display: flex;
         flex-direction: column;
@@ -307,7 +305,7 @@ ul {
     }
     #contato form input[type=text],#contato form input[type=email],#contato form input[type=submit], #contato form textarea{
         width: 350px;
-        margin-bottom: 17px;
+        margin-bottom: 24px;
     }
     #contato #onde-estamos{
         height: 300px;
@@ -316,18 +314,14 @@ ul {
         width: 350px;
         height: 300px;
     }
+    /* Footer */
     #redes-sociais{
         display: flex;
         flex-direction: column;
-
     }
-
 }
 @media (max-width : 1024px){
     .barra-icone{
         flex-wrap: wrap;
-    }
-    #produtos-servicos{
-       flex-wrap: wrap;
     }
 }
