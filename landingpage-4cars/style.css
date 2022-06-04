@@ -5,10 +5,11 @@
 }
 /* Container */
 .container{
-    max-width: 1280px;
+    max-width: 100%;
     display: grid;
     grid-template-rows:10vh 1fr 10vh;
     grid-template-columns: 1fr;
+    
 }
 /* Header */
 .barra-icone{
@@ -45,7 +46,7 @@
 /* Banner Page*/
 
 .banner {
-    width: 100vw;
+    width: 100%;
     height: 600px;
     text-align: center;
     margin-bottom: 100px;
@@ -55,7 +56,7 @@
 
 .banner img {
     padding: 0;
-    width: 100vw;
+    width: 100%;
     height: 600px;
 }
 
@@ -92,13 +93,16 @@
     align-items: flex-end;
 }
 #sobre-4cars img {
-    width: 100vw;
+    width: 100%;
     height: 55vh;
     margin: 10px 0;
     padding: 0;
 }
 
 /* produtos-servicos */
+#produtos-servicos #mensagem-mobile{
+    display: none;
+}
 #produtos-servicos {
     width: 100%;
     height: 90vh;
@@ -145,16 +149,10 @@ ul {
 .linhaLuxo {
     padding-left: 1em;
 }
-.linhapopular:hover {
+.linhapopular:hover, .linhaLuxo:hover {
     border: 1px solid black;
     border-radius: 5px;
     width: 500px;
-}
-.linhaLuxo:hover {
-    border: 1px solid black;
-    border-radius: 5px;
-    width: 500px;
-    
 }
 .linhaLuxo a, .linhapopular a {
     text-decoration: none;
@@ -179,7 +177,7 @@ ul {
     font-size: 35px;
 }
 #contato > article > form {
-    width: 400px;
+    width: 100%;
     margin: 0 auto;
 }
 #contato  > article > form input {
@@ -195,6 +193,8 @@ ul {
     margin: 15px;
     padding: 8px 6px;
     box-sizing: border-box;
+    width: 100%;
+    height: 100px;
 }
 
 #contato form input[type=submit]:hover {
@@ -237,4 +237,97 @@ ul {
 .icon{
     flex-direction: row;
     padding-top: 6px;
+}
+
+/* Responsividade */
+ @media screen and (min-width: 320px) and (max-width : 480px) {
+    .barra-icone{
+        background-color: white;
+        position: sticky;
+        top: 0;
+        border-bottom: 1px solid lightgray;
+        z-index: 1;
+    }
+    .barra-icone a{
+       font-size: 13px;
+    } 
+    .barra-icone img{
+        width: 17vw;
+    }
+    .banner{
+        display: none;
+    }
+    #produtos-servicos>div{
+        min-height: 128px;
+        width: 100%;
+    }
+    #produtos-servicos #mensagem-mobile{
+        display: flex;
+        width: 100%;
+    }
+    #mensagem-mobile h2,#mensagem-mobile h1{
+        font-size: 25px;
+    }
+    #produtos-servicos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%; 
+        height: 900px;
+    }
+    /* #produtos-servicos .linhapopular {
+        height: 785px;
+    } */
+    .linhapopular .carro, .linhaLuxo .carroluxo{
+        width: 200px;
+        height: 150px;
+    }
+    .info-4cars img{
+        display: none;
+    }
+    .linhapopular:hover, .linhaLuxo:hover {
+        /* width: 350px; */
+        border: 0;
+    }
+    
+    #contato{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 350px;
+    }
+    #contato .form-contato{
+        width:350px;
+        height: 400px;
+    }
+    #contato>.form-contato>h2{
+        font-size: 25px; 
+        padding: 16px;
+        margin-bottom: 20px;
+    }
+    #contato form input[type=text],#contato form input[type=email],#contato form input[type=submit], #contato form textarea{
+        width: 350px;
+        margin-bottom: 17px;
+    }
+    #contato #onde-estamos{
+        height: 300px;
+    }
+    #onde-estamos img{
+        width: 350px;
+        height: 300px;
+    }
+    #redes-sociais{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
+@media (max-width : 1024px){
+    .barra-icone{
+        flex-wrap: wrap;
+    }
+    #produtos-servicos{
+       flex-wrap: wrap;
+    }
 }
