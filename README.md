@@ -1,6 +1,6 @@
-### Projeto Landing Page - 4Cars
+<h2 align="center">Projeto Landing Page - 4Cars</h2>
 
-A 4Cars é uma empresa que tem surfado na onda dos apps de motoristas. Sua proposta é oferecer carros para serem alugados por motoristas a um custo razoável, aumentando a oportunidade para quem não têm dinheiro para comprar um carro. 
+<h4 align="center">A 4Cars é uma empresa que tem surfado na onda dos apps de motoristas. Sua proposta é oferecer carros para serem alugados por motoristas a um custo razoável, aumentando a oportunidade para quem não têm dinheiro para comprar um carro. </h4>
 
 ### O que funciona
 - Rsponsividade mobile e desktop,
