@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Container */
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows:10vh 1fr 10vh;
+    grid-template-columns: 1fr;
+}
+/* Header */
+.barra-icone, nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.barra-icone {
+    border-bottom: 1px solid lightgray;
+}
+.barra-icone nav a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+    text-align: center; 
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.barra-icone nav a:hover {
+    color: #ff5c5c;
+    border-bottom:1px solid #ff5c5c;
+}  
+.barra-icone img{
+    width: 16vh;
+    padding: 0;
+}
+/* Banner Page*/
+.banner {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+    opacity: 0.8;
+    z-index: 0;
+}
+.banner img {
+    padding: 0;
+    width: 100%;
+}
+.msg-banner {
+    background-color: white;
+    width: 90%;
+    height: 150px;
+    border-radius: 20px;
+    margin: 0 auto;
+    box-shadow: 10px 5px 13px black;
+    margin-top: -80px;
+    padding: 10px;
+    opacity: 0.8;
+    z-index: 0;
+}
+.msg-banner h1 {
+    font-size: 2rem;
+    line-height: 50px;
+}
+.msg-banner h2 {
+    font-size: 1.8rem;
+    line-height: 69px;
+}
+/* Main */
+/* Sobre a 4cars */
+.sobre-4cars {
+    height: 70vh;
+    display: flex;
+    align-items: flex-end;
+}
+#sobre-4cars img {
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+}
+
+#imagemNova {
+    display: none;
+}
+/* produtos-servicos */
+#produtos-servicos #mensagem-mobile{
+    display: none;
+}
+#produtos-servicos {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 50px;
+}
+#produtos-servicos h2 {
+    color: #ff5c5c;
+    font-size: xx-large;
+    font-weight: bold;
+}
+#produtos-servicos>div {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+}
+#produtos-servicos>div> div, img , ul {
+    padding: 1em;
+}
+.carro {
+    max-width: 400px;
+    max-height: 200px;
+}
+.carroluxo {
+    max-width: 400px;
+    max-height: 190px;
+}
+ul {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;   
+    font-size: larger;
+}
+#botaoPopular, #botaoLuxo {
+    display: none;
+}
+.linhapopular {
+    padding-left: 1em;
+}
+.linhaLuxo {
+    padding-left: 1em;
+}
+.linhapopular:hover, .linhaLuxo:hover {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 500px;
+}
+.linhaLuxo a, .linhapopular a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+/* Contato */
+#contato {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+#contato > article {
+    height: 450px;
+    background-color: white;
+    text-align: center;
+    color: black;
+}
+#contato > article >  h2 {
+    padding: 50px;
+    font-size: 35px;
+}
+#contato > article > form {
+    width: 100%;
+    margin: 0 auto;
+}
+#contato  > article > form input {
+    display: block;
+    margin: 15px;
+    width: 100%;
+    height: 40px;
+    padding: 6px;
+    box-sizing: border-box;
+}
+#contato form textarea {
+    display: block;
+    margin: 15px;
+    padding: 8px 6px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100px;
+}
+#contato form input[type=submit]:hover {
+    background: linear-gradient(90deg,#f3bcaf, #f4b3aa, #f5aaa6, #f5a1a3, #f498a2, #f38fa2);
+    border: 0;
+}
+/* Onde estamos */
+#onde-estamos{
+    text-align: center; 
+}
+#onde-estamos img{
+    height: 450px;
+}
+/* Footer */
+#redesSociais{
+    width: 100%;
+    height: 12vh;
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 1px solid lightgrey;
+}
+#redesSociais a {
+    text-decoration: none;
+    cursor: pointer;
+}
+#redesSociais h2 {
+    color: black;
+    padding: 0;
+}
+#redesSociais img{
+    width: 40px;
+    padding: 5px;
+}
+#redesSociais img:hover{
+    width: 45px;
+}
+.icon{
+    flex-direction: row;
+    padding-top: 6px;
+}
+/* Responsividade*/
+ @media screen and (min-width: 320px) and (max-width : 480px) {
+     /* Header */
+    .barra-icone{
+        background-color: white;
+        position: initial;
+        border-bottom: 1px solid lightgray;
+        z-index: 1;
+    }
+    .barra-icone nav a{
+       font-size: 13px;
+    } 
+    .barra-icone img{
+        width: 17vw;
+    }
+    /* Main - Banner */
+    .banner{
+        margin-bottom: 30px;
+    }
+    .msg-banner{
+        height: 70px;
+        width: 90%;
+        margin-top:-35px;
+    }
+    .msg-banner h1 {
+        font-size: 1rem;
+        line-height: 31px;
+    }
+    .msg-banner h2 {
+        font-size: 1rem;
+        line-height: 12px;
+    }
+    /* Main - produtos e serviços */
+    #produtos-servicos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%; 
+        height: 684px;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+    #produtos-servicos>div{
+        min-height: 128px;
+        width: 100%;
+    }
+    .linhapopular {
+        padding-left: 0;
+    }
+    .linhapopular .carro{
+        width: 218px;
+        height: 153px;
+    }
+    .linhaLuxo {
+        padding-left: 0;
+    }
+    .linhaLuxo .carroluxo{
+        width: 200px;
+        height: 150px;
+    }
+    .linhapopular:hover, .linhaLuxo:hover {
+        border: 0;
+    }   
+    .linhapopular ul, .linhaLuxo ul {
+        display: none;
+    }
+    #botaoPopular, #botaoLuxo {
+        display: inline-flex;
+        padding: 6px 12px;
+        border: 0;
+        box-shadow: 1px 2px 7px #ff5c5c;
+    }
+    #botaoPopular:hover, #botaoLuxo:hover {
+        border: 0;
+        background: linear-gradient(90deg,#f3bcaf, #f4b3aa, #f5aaa6, #f5a1a3, #f498a2, #f38fa2);
+    }
+    #imagemOriginal {
+        display: none;
+    }
+    #imagemNova {
+        display: flex;
+    }
+    /* Main - Contato  */
+    #contato{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    
+    }
+    #contato .form-contato{
+        width: 100%;
+    }
+    #contato>.form-contato>h2{
+        font-size: 25px; 
+        padding: 16px;
+        margin-bottom: 20px;
+    }
+    #contato form input[type=text],#contato form input[type=email],#contato form input[type=submit], #contato form textarea{
+        width: 90%;
+        margin-bottom: 24px;
+    }
+    #contato #onde-estamos{
+        margin: 15px 0;
+    }
+    #onde-estamos img{
+        height: 98%;
+        width: 100%;
+        object-fit: cover;
+    }
+    /* Footer */
+    #redes-sociais{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width : 1024px){
+    .barra-icone{
+        flex-wrap: wrap;
+    }
+}
